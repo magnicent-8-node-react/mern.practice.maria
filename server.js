@@ -13,8 +13,7 @@ app.use(bodyParser.json())
 const db_url = process.env.MONGODB_URL || require('./config/keys').mongoURI;
 
 // Connect to Mongo
-mongoose
-  .connect(db_url, { 
+mongoose.connect(db_url, { 
     useNewUrlParser: true,
     useCreateIndex: true
   }) // Adding new mongo url parser
