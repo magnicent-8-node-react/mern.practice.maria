@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // Bodyparser Middleware
-app.use(bodyParser.json());
+app.use(bodyParser.json())
 
 // DB Config
 const db = require('./config/keys').mongoURI
